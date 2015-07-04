@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
   resources :providers
   resources :products
-
+  resources :sales
   root 'providers#index'
+
+  # post 'sales/create'     => 'sales#create'
+  # get  'sales/new'  => 'sales#new'
+  # get  'sales/:id'  => 'sales#show'
+  # get  'sales/:id'  => 'sales#show'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

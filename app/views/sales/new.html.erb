@@ -1,0 +1,12 @@
+<h1> Lançamento de vendas </h1>
+
+<%= form_for @sale do |f| %>
+  <%= f.label :product %>
+  <%= f.collection_select(:product_id,
+    select_product, :id, :name, prompt: '----') %>
+
+  <%= f.label :quantity %>
+  <%= f.text_field :quantity %>
+
+  <%= f.submit %>
+<% end %>
