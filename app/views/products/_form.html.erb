@@ -9,7 +9,8 @@
   </div>
   <div>
     <%= f.label :provider %>
-    <%= f.text_field :provider %>
+    <%= f.collection_select(:provider_id,
+      select_provider, :id, :name, prompt: 'Selecione') %>
   </div>
   <div>
     <%= f.label :info %>
