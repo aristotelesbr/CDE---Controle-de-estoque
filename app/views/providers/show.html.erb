@@ -1,12 +1,12 @@
-<div>
-  Fornedor:
+<p>
+  <strong>Fornedor:</strong>
   <%= @provider.name %>
-</div>
-  </br>
-<div>
-  cnpj:
+</p>
+
+<p>
+  <strong>CNPJ:</strong>
   <%= @provider.cnpj %>
-</div>
+</p>
 
 <%= link_to 'Voltar', providers_path %> |
 <%= link_to 'Editar', edit_provider_path(@provider) %> |
