@@ -1,0 +1,21 @@
+<%= form_for @product do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+  </div>
+  <div>
+    <%= f.label :provider %>
+    <%= f.text_field :provider %>
+  </div>
+  <div>
+    <%= f.label :info %>
+    <%= f.text_field :info %>
+  </div>
+  <%= f.submit %>
+<% end %>
+
+
