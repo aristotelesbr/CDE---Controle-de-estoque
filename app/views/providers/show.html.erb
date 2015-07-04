@@ -8,4 +8,6 @@
   <%= @provider.cnpj %>
 </div>
 
-<%= link_to 'Voltar', providers_path %>
+<%= link_to 'Voltar', providers_path %> |
+<%= link_to 'Editar', edit_provider_path(@provider) %> |
+<%= link_to 'Deletar', provider_path(@provider), method: :delete, data: {confirm: 'Excluir registro?'} %>

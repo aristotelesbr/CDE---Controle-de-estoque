@@ -1,6 +1,5 @@
 class ProvidersController < ApplicationController
   before_action :find_provider, only: [:show, :edit, :update, :destroy]
-  # before_action :provider_params, only: [:create, :update]
   def index
     @providers = Provider.all
   end
@@ -27,9 +26,19 @@ class ProvidersController < ApplicationController
   end
 
   def update
+    if @provider.update(provider_params)
+      redirect_to providers_path,
+        notice: 'Registro atualizado com sucesso!'
+    else
+      render @provider,
+        alet: 'Não foi possivel salvar as alteraçõe. Tente novamente.'
+    end
   end
 
   def destroy
+    @provider.destroy
+      redirect_to root_path,
+        notice: 'O registro foi excluido.'
   end
 
   private

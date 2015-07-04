@@ -3,7 +3,7 @@
 <div>
   <% @providers.each do |provider| %>
   <li>
-    Fornecedor: <%= provider.name %>
+    <%= link_to provider.name, provider %>
     CNPJ: <%= provider.cnpj %>
   </li>
   <% end %>
