@@ -1,1 +1,12 @@
-<h1>Index :)</h1>
+<h1>Lista de fornecedores</h1>
+
+<div>
+  <% @providers.each do |provider| %>
+  <li>
+    Fornecedor: <%= provider.name %>
+    CNPJ: <%= provider.cnpj %>
+  </li>
+  <% end %>
+</div>
+
+<%= link_to 'Novo', new_provider_path %>
