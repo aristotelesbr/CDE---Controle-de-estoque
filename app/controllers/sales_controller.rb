@@ -1,5 +1,10 @@
 class SalesController < ApplicationController
   before_action :find_sale, only: [:show]
+
+  def index
+    @sales = Sale.all
+  end
+
   def new
     @sale = Sale.new
   end
