@@ -1,7 +1,5 @@
 class Product < ActiveRecord::Base
   belongs_to :provider
+  has_many :sales
 
-  def self.products_total
-    self.sum(:price)
-  end
 end
