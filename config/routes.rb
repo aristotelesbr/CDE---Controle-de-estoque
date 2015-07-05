@@ -2,7 +2,10 @@ Rails.application.routes.draw do
   resources :providers
   resources :products
   resources :sales
+
   root 'providers#index'
+
+  get 'reports/index'
 
   # post 'sales/create'  => 'sales#create'
   # get  'sales/new'    => 'sales#new'

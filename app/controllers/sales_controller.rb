@@ -1,7 +1,7 @@
 class SalesController < ApplicationController
   before_action :find_sale, only: [:show]
 
-  def index
+  def report
     @sales = Sale.all
   end
 

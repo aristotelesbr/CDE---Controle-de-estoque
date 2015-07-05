@@ -1,9 +1,0 @@
-<h1>Registro de vendas</h1>
-<% @sales.each do |sale| %>
-  <li>
-    <%= link_to sale.product.name, sale %> -
-    <%= sale.quantity %>
-  </li>
-<% end %>
-</br>
-<%= link_to 'Vendas', new_sale_path %>
