@@ -1,14 +1,32 @@
 <h1>Relatório de vendas</h1>
-<p>
+<table class='table table-bordered'>
+  <thead>
+    <tr>
+      <th>Produto</th>
+      <th>Valor unitário</th>
+      <th>Quantidade</th>
+      <th>Total</th>
+    </tr>
+  </thead>
   <strong>Total de produtos vendidos:</strong>
-  <%= @sale_total %>
-</p>
-<hr>
-<p>
-  <strong>Dinheiro em caixa:</strong>
-  <%= @counts %>
-</p>
+      <p>
+        <strong><%= @sale_total %></strong>
+      </p>
+  <tbody>
+    <strong>Tabela:</strong>
+    <% @dinheiro_em_caixa.each do |sale| %>
+      <tr>
+        <th><%= sale.product.name %></th>
+        <th><%= sale.product.price %></th>
+        <th><%= sale.quantity %></th>
+        <th><%= link_to sale.total, sale %></th>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+  <p>
+    <strong>Total:</strong>
+    <%= @counts %>
+  </p>
 
 <%= link_to 'Ir para o registrador', new_sale_path %>
-
-
