@@ -1,0 +1,23 @@
+pt-BR:
+  titles:
+    reports:
+      index: Relatório
+
+    products:
+      index: Lista de produtos
+      new: Adcionar produto
+      edit: Editar produto
+      show: Produto
+
+    providers:
+      index: Lista de fornecedores
+      new: Adcionar fornecedor
+      edit: Editar fornecedor
+      show: Fornecedor
+
+    sales:
+      new: Registro de vendas
+      show: Vendas lançadas
+
+    welcome:
+      index: 'Gestão de estoque'
