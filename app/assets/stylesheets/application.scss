@@ -1,0 +1,95 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+
+body {
+  font: normal 18px/1.5 "Helvetica Neue", sans-serif;
+  margin: 0 auto;
+  width: 780px;
+}
+
+.page {
+  padding: 50px 0;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 10px;
+  background: rgba(#000, .1);
+  border-radius: 5px;
+}
+
+footer p {
+  margin: 0;
+}
+
+header {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  display: inline-block;
+  line-height: 60px;
+  font-family: HelveticaNeue-Light, "Helvetica Neue Light", sans-serif;
+  font-size: 36px;
+  font-weight: 100;
+  border-left: 1px solid #ccc;
+  margin: 0;
+  margin-left: 15px;
+  padding-left: 15px;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+nav input {
+  font-size: 18px;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+nav li {
+  float: left;
+  list-style: none;
+  margin-left: 15px;
+}
+
+nav a {
+  color: #666;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+form > div + div {
+  margin-top: 20px;
+}

@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :products
   resources :sales
 
-  root 'providers#index'
+  root 'welcome#index'
 
   get 'reports/index'
 

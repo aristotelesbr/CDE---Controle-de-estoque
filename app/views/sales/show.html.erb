@@ -7,5 +7,9 @@
   <strong>Quantidade:</strong>
   <%= @sale.quantity %>
 </p>
+<p>
+  <strong>Data do registro:</strong>
+  <%= @sale.created_at.strftime("%d %b. %Y") %>
+</p>
 
-<%= link_to 'Voltar', new_sale_path %>
+<%= link_to 'Voltar', reports_index_path %>

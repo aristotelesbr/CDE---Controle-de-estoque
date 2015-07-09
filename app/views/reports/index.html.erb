@@ -16,10 +16,10 @@
     <strong>Tabela:</strong>
     <% @dinheiro_em_caixa.each do |sale| %>
       <tr>
-        <th><%= sale.product.name %></th>
+        <th><%= link_to sale.product.name, sale %></th>
         <th><%= sale.product.price %></th>
         <th><%= sale.quantity %></th>
-        <th><%= link_to sale.total, sale %></th>
+        <th><%= sale.total %></th>
       </tr>
     <% end %>
   </tbody>
