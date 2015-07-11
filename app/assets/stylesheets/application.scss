@@ -16,7 +16,9 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
-
+ @import "jquery.datetimepicker";
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
 
 body {
   font: normal 18px/1.5 "Helvetica Neue", sans-serif;

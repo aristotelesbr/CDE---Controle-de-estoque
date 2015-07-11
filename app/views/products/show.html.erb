@@ -18,6 +18,7 @@
   <%= @product.info %>
 </p>
 
+
 <%= link_to 'Voltar', products_path %>
 <%= link_to 'Editar', edit_product_path(@product) %>
 <%= link_to 'Deletar', product_path, method: :delete, data: {confirm: 'Excluir registro?'}  %>

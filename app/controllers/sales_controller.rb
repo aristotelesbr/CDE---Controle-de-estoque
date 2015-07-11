@@ -1,8 +1,18 @@
 class SalesController < ApplicationController
   before_action :find_sale, only: [:show]
 
-  def report
+  def index
     @sales = Sale.all
+  end
+
+  def search
+    if params[:data1].present? && params[:data2].present?
+      @sales = Sale.where( created_at: params[:data1].to_date.beginning_of_day..params[:data2].to_date.end_of_day)
+      redirect_to sales_path
+    else
+      flash[:alert] = "Você precisa preenhcer ambas as datas né tio."
+      @sales = Sale.where( created_at: Date.today.beginning_of_month..Date.today.end_of_month)
+    end
   end
 
   def new
