@@ -7,5 +7,7 @@ pt-BR:
 
       product:
         name: 'Nome'
+        price: 'Preço'
+        provider: Fornecedor
 
 

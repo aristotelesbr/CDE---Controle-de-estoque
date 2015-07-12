@@ -14,7 +14,6 @@ pt-BR:
     product:
       name: Nome
       price: Preço
-      provider: Fornecedor
       info: Detalhes
 
       show:
