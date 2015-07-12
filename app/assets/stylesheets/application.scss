@@ -92,6 +92,46 @@ ul {
   text-decoration: none;
 }
 
+.error-messages li {
+  list-style: disc;
+  margin-left: 25px;
+}
+
+.error-messages p {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.error-messages {
+  border-left: 10px solid #D45500;
+  padding: 0 0 5px 20px;
+  margin-bottom: 20px;
+}
+
 form > div + div {
   margin-top: 20px;
+}
+
+.field_with_errors label {
+  color: #D45500;
+  font-weight: bold;
+}
+
+.message {
+  border-radius: 5px;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 20px;
+}
+
+.notice {
+  background: #55D400;
+}
+
+.alert {
+  background: #D45500;
+}
+
+label {
+  display: block;
 }

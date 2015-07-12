@@ -1,6 +1,8 @@
 class Sale < ActiveRecord::Base
   belongs_to :product
 
+  validates_presence_of :product_id, :quantity
+
   # Soma todos os preços.
   def self.sales_total
     self.joins(:product).sum('products.price * sales.quantity')

@@ -4,11 +4,9 @@ source 'https://rubygems.org'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'font-awesome-sass'
 gem 'jquery-datetimepicker-rails'
-gem 'responders'
+
 
 gem 'devise', '~> 3.5.1'
-
-
 
 # Gems Nativas
 gem 'rails', '4.2.1'

@@ -1,3 +1,5 @@
+<%= render 'error_messages', record: @sale %>
+
 <%= form_for @sale do |f| %>
   <%= f.label :product %>
   <%= f.collection_select(:product_id,
