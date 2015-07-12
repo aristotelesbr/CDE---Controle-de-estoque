@@ -1,9 +1,7 @@
 class SalesController < ApplicationController
   before_action :find_sale, only: [:show]
-  respond_to :html, :js
 
   def index
-    @sales = Sale.all
   end
 
   def search
