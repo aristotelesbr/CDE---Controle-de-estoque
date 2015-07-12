@@ -9,7 +9,7 @@ class SalesController < ApplicationController
       @sales = Sale.where( created_at: params[:data1].to_date.beginning_of_day..params[:data2].to_date.end_of_day)
       respond_to :js
     else
-      flash[:alert] = "Você precisa preenhcer ambas as datas né tio."
+      flash.now[:alert] = "Você precisa preenhcer ambas as datas né tio."
       @sales = Sale.where( created_at: Date.today.beginning_of_month..Date.today.end_of_month)
     end
   end

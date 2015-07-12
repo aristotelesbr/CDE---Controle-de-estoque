@@ -1,12 +1,16 @@
 <%= render 'error_messages', record: @sale %>
 
 <%= form_for @sale do |f| %>
-  <%= f.label :product %>
-  <%= f.collection_select(:product_id,
-    select_product, :id, :name, prompt: '----') %>
-
-  <%= f.label :quantity %>
-  <%= f.text_field :quantity %>
-
-  <%= f.submit %>
+  <div>
+    <%= f.label :product, t('labels.sale.product')%>
+    <%= f.collection_select(:product_id,
+      select_product, :id, :name, prompt: '----') %>
+  </div>
+  <div>
+    <%= f.label :quantity, t('labels.sale.quantity') %>
+    <%= f.text_field :quantity %>
+  </div>
+  <div>
+    <%= f.submit class: 'btn btn-default' %>
+  </div>
 <% end %>

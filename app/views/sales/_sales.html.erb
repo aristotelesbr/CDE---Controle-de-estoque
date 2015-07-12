@@ -1,14 +1,16 @@
 <% if @sales.count != 0 %>
-<table>
+<table class='table table-bordered'>
   <thead>
     <tr>
-      <th>Produto</th>
+      <th>Produtos</th>
+      <th>Data</th>
     </tr>
   </thead>
   <tbody>
     <% @sales.each do |sale| %>
       <tr>
         <th><%= link_to sale.product.name, sale %></th>
+        <th><%= sale.created_at.strftime("%d %b. %Y") %></th>
       </tr>
     <% end %>
   </tbody>

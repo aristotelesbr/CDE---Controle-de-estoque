@@ -1,0 +1,11 @@
+pt-BR:
+  activerecord:
+    attributes:
+      sale:
+        product_id: 'Produto'
+        quantity: 'Quantidade'
+
+      product:
+        name: 'Nome'
+
+

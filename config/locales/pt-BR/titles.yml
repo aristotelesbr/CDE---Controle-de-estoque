@@ -16,6 +16,7 @@ pt-BR:
       show: Fornecedor
 
     sales:
+      index: Relatório de vendas
       new: Registro de vendas
       show: Vendas lançadas
 
