@@ -6,10 +6,28 @@ pt-BR:
       product: Produto
       quantity: Qunatidade
 
+      show:
+        product: 'Produto:'
+        quantity: 'Quantidade:'
+        date: 'Data do registro:'
+
     product:
+      name: Nome
+      price: Preço
+      provider: Fornecedor
+      info: Detalhes
 
-    helpers:
-      submit:
-        create_sale: dksjdksjdk
+      show:
+        name: 'Nome:'
+        value: 'Valor:'
+        provider: 'Fornecedor:'
+        information: 'Informações:'
 
+  helpers:
+    submit:
+      sale:
+        create: Adcionar
+
+      product:
+        create: Adcionar
 

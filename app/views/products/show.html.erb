@@ -1,24 +1,24 @@
 <p>
-  <strong>Nome:</strong>
+  <strong><%= t('labels.product.show.name') %></strong>
   <%= @product.name %>
 </p>
 
 <p>
-  <strong>Valor:</strong>
+  <strong><%= t('labels.product.show.value') %></strong>
   <%= @product.price %>
 </p>
 
 <p>
-  <strong>Fornecedor:</strong>
+  <strong><%= t('labels.product.show.provider') %></strong>
   <%= @product.provider.name %>
 </p>
 
 <p>
-  <strong>Informações Gerais:</strong>
+  <strong><%= t('labels.product.show.information') %></strong>
   <%= @product.info %>
 </p>
 
 
-<%= link_to 'Voltar', products_path %>
-<%= link_to 'Editar', edit_product_path(@product) %>
-<%= link_to 'Deletar', product_path, method: :delete, data: {confirm: 'Excluir registro?'}  %>
+<%= link_to t('actions.back'), products_path, class: 'btn btn-default' %>
+<%= link_to t('actions.edit'), edit_product_path(@product), class: 'btn btn-primary' %>
+<%= link_to t('delete'), product_path, method: :delete, data: {confirm: 'Excluir registro?'}, class: 'btn btn-danger'  %>

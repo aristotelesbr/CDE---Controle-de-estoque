@@ -1,15 +1,15 @@
 <p>
-<strong>Produto:</strong>
+<strong><%= t('labels.sale.show.product') %></strong>
   <%= @sale.product.name %>
 </p>
 
 <p>
-  <strong>Quantidade:</strong>
+  <strong><%= t('labels.sale.show.quantity') %></strong>
   <%= @sale.quantity %>
 </p>
 <p>
-  <strong>Data do registro:</strong>
+  <strong><%= t('labels.sale.show.date') %></strong>
   <%= @sale.created_at.strftime("%d %b. %Y") %>
 </p>
 
-<%= link_to 'Voltar', reports_index_path %>
+<%= link_to 'Voltar', reports_index_path, class: 'btn btn-primary' %>
