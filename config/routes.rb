@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  devise_for :users
   resources :providers, :products
+  devise_for :users
 
   resources :sales do
     get 'search', on: :collection
   end
 
-  get 'reports/index'
   root 'welcome#index'
+  get 'reports/index'
 
 
   # post 'sales/create'  => 'sales#create'

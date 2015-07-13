@@ -1,4 +1,5 @@
 class ReportsController < ApplicationController
+
   def index
     @sale_total = Sale.count
     @counts = Sale.sales_total
