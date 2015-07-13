@@ -1,13 +1,13 @@
 <p>
-  <strong>Fornedor:</strong>
+  <strong><%= t('labels.provider.show.provider') %></strong>
   <%= @provider.name %>
 </p>
 
 <p>
-  <strong>CNPJ:</strong>
+  <strong><%= t('labels.provider.show.cnpj') %></strong>
   <%= @provider.cnpj %>
 </p>
 
-<%= link_to 'Voltar', providers_path %> |
-<%= link_to 'Editar', edit_provider_path(@provider) %> |
-<%= link_to 'Deletar', provider_path(@provider), method: :delete, data: {confirm: 'Excluir registro?'} %>
+<%= link_to t('actions.back'), providers_path, class: 'btn btn-default' %>
+<%= link_to t('actions.edit'), edit_provider_path(@provider), class: 'btn btn-primary' %>
+<%= link_to t('actions.remove'), provider_path(@provider), method: :delete, data: {confirm: 'Excluir registro?'}, class: 'btn btn-danger' %>

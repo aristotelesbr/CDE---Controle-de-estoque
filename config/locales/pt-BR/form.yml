@@ -26,6 +26,10 @@ pt-BR:
       name: Nome
       cnpj: 'CNPJ'
 
+      show:
+        provider: 'Fornecedor:'
+        cnpj: 'CNPJ:'
+
   helpers:
     submit:
       sale:
