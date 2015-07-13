@@ -22,3 +22,14 @@ pt-BR:
 
     welcome:
       index: 'Gestão de estoque'
+
+    registrations:
+      new: Cadastrar usuário
+
+    sessions:
+      new: Entrar
+
+    passwords:
+      new: Recuperar senha
+
+

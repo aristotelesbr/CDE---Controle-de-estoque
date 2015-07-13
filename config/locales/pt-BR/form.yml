@@ -41,3 +41,11 @@ pt-BR:
       provider:
         create: Adcionar
 
+      registration:
+        create: Cadastrar
+
+      session:
+        create: Entrar
+
+      passwords:
+        create: Redefinir minha senha

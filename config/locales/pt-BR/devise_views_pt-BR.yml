@@ -1,0 +1,17 @@
+pt-BR:
+  registration:
+    new:
+      signup: 'Cadastre-se'
+      email: 'Email'
+      password: 'Senha'
+      password_confirmation: 'Confirme sua senha'
+
+  sessions:
+    new:
+      email: 'Email'
+      password: 'Sua senha'
+      rememberme: 'Lembrar?'
+
+  passwords:
+    new:
+      email: 'Email'
