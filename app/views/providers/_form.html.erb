@@ -1,12 +1,15 @@
+<%= render 'error_messages', record: @provider %>
 <%= form_for @provider do |f| %>
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :cnpj %>
-    <%= f.text_field :cnpj %>
-  </p>
-
-  <%= f.submit %>
+  <div>
+    <%= f.label :name, t('labels.provider.name') %>
+    <%= f.text_field :name, class: 'form-control' %>
+  </div>
+  <div>
+    <%= f.label :cnpj, t('label.provider.cnpj') %>
+    <%= f.text_field :cnpj, class: 'form-control' %>
+  </div>
+  <div>
+    <%= f.submit t('helpers.submit.provider.create'), class: 'btn btn-primary' %>
+    <%= link_to t('actions.cancel'), providers_path, class: 'btn btn-danger' %>
+  </div>
 <% end %>

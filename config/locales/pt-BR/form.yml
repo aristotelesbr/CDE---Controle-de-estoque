@@ -22,11 +22,18 @@ pt-BR:
         provider: 'Fornecedor:'
         information: 'Informações:'
 
+    provider:
+      name: Nome
+      cnpj: 'CNPJ'
+
   helpers:
     submit:
       sale:
         create: Adcionar
 
       product:
+        create: Adcionar
+
+      provider:
         create: Adcionar
 

@@ -10,4 +10,8 @@ pt-BR:
         price: 'Preço'
         provider: Fornecedor
 
+      provider:
+        name: Nome
+        cnpj: 'CNPJ'
+
 
