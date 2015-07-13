@@ -1,2 +1,8 @@
 pt-BR:
   signature: 'Aristóteles Coutinho'
+
+  sale:
+    index:
+      note: |
+         Porfavor selecione uma data de inicio
+          e fim para realizar a consulta.
